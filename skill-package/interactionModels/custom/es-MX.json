@@ -46,7 +46,7 @@
             {
               "name": "author",
               "elicitationRequired": false,
-              "type": "AMAZON.Author",
+              "type": "AMAZON.People",
               "confirmationRequired": false,
               "prompts": {}
             }
