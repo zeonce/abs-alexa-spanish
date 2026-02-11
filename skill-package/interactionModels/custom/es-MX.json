@@ -1,0 +1,252 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "time",
+              "elicitationRequired": true,
+              "type": "AMAZON.DURATION",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.454140924019.1491668277531"
+              }
+            }
+          ],
+          "name": "GoBackXTimeIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        },
+        {
+          "slots": [
+            {
+              "name": "time",
+              "elicitationRequired": true,
+              "type": "AMAZON.DURATION",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1425758106737.86337652976"
+              }
+            }
+          ],
+          "name": "GoForwardXTimeIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        },
+        {
+          "slots": [
+            {
+              "name": "title",
+              "elicitationRequired": false,
+              "type": "AMAZON.Book",
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "author",
+              "elicitationRequired": false,
+              "type": "AMAZON.Author",
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ],
+          "name": "PlayBookIntent",
+          "confirmationRequired": false,
+          "prompts": {}
+        },
+        {
+          "slots": [
+            {
+              "name": "chapterNumber",
+              "elicitationRequired": true,
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.464967230894.1040650485539"
+              }
+            }
+          ],
+          "name": "GoToChapterX",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "salir"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hola",
+            "como estas",
+            "di hola mundo",
+            "hola mundo",
+            "prueba",
+            "probando",
+            "una prueba mas"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "PlayLastIntent",
+          "samples": [
+            "reproduce el ultimo libro",
+            "continua con el libro",
+            "continua mi libro",
+            "sigue leyendo donde te quedaste",
+            "lee el ultimo libro",
+            "continua con mi libro",
+            "continua con la lectura",
+            "sigue reproduciendo donde te quedaste"
+          ]
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "time",
+              "type": "AMAZON.DURATION",
+              "samples": [
+                "regresa {time}",
+                "atrasa {time}",
+                "ve hacia atrás {time}",
+                "retrocede {time}"
+              ]
+            }
+          ],
+          "name": "GoBackXTimeIntent",
+          "samples": [
+            "regresa {time}",
+            "atrasa {time}",
+            "reversa {time}",
+            "ve hacia atras {time}",
+            "retrocede {time}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "time",
+              "type": "AMAZON.DURATION",
+              "samples": [
+                "adelanta {time}",
+                "salta {time}",
+                "saltate {time}",
+                "adelantate {time}",
+              ]
+            }
+          ],
+          "name": "GoForwardXTimeIntent",
+          "samples": [
+            "salta {time}",
+            "adelanta {time}",
+            "ve hacia adelante {time}",
+            "saltate {time}",
+            "adelantate {time}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "title",
+              "type": "AMAZON.Book"
+            },
+            {
+              "name": "author",
+              "type": "AMAZON.Author"
+            }
+          ],
+          "name": "PlayBookIntent",
+          "samples": [
+            "reproduce {title} por {author}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "chapterNumber",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "GoToChapterX",
+          "samples": [
+            "salta al capitulo {chapterNumber}",
+            "regresa al capitulo {chapterNumber}",
+            "ve al capitulo {chapterNumber}"
+          ]
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        }
+      ],
+      "types": [],
+      "invocationName": "audio bookshelf"
+    },
+    "prompts": [
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Por ejemplo, puedes decir retrocede quince segundos."
+          }
+        ],
+        "id": "Elicit.Slot.454140924019.1491668277531"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Por ejemplo, puedes decir retrocede quince segundos"
+          }
+        ],
+        "id": "Elicit.Slot.1425758106737.86337652976"
+      },
+      {
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Por ejemplo, puedes decir 've al capitulo doce'"
+          }
+        ],
+        "id": "Elicit.Slot.464967230894.1040650485539"
+      }
+    ]
+  }
+}
