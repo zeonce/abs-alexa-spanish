@@ -58,6 +58,18 @@
           "keywords": [],
           "name": "Audiobookshelf",
           "summary": "Gib Hörbücher vom selbst gehosteten Audiobookshelf-Server wieder."
+        },
+        "es-MX": {
+          "description": "Skill para reproducir audiolibros de un servidor de Audiobookshelf en dispositivos alexa",
+          "examplePhrases": [
+            "Reproducir",
+            "Reproduce el ultimo audiolibro",
+            "Reproduce La Hermandad del Anillo por J.R.R. Tolkien",
+            "Adelanta 30 segundos"
+          ],
+          "keywords": [],
+          "name": "Audiobookshelf",
+          "summary": "Reproduce audiolibros desde tu propio servidor de Audiobookshelf"
         }
       },
       "testingInstructions": "Sample Testing Instructions."
