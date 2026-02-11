@@ -8,7 +8,7 @@ module.exports = {
   SpeakPlaybackBookHandlerNoBookFoundP1: '"No se encontro',
   SpeakPlaybackBookHandlerNoBookFoundP2: 'encontrado. Por favor, intenta de nuevo.',
   SpeakPlayBookIntentHandlerNoBookTitle: 'No entendí la solicitud. Intenta decir "reproduce" seguido del título y el autor".',
-  SpeakPlayBookIntentHandlerNoBookFound: "No pude encontrar un título que coincidiera con:",
+  SpeakPlayBookIntentHandlerNoBookFound: 'No pude encontrar un título que coincidiera con:',
   SpeakUnsupportedAudioIntentHandler: 'Lo siento, todavía no sé hacer eso.',
   SpeakHelpIntentHandler: 'Intenta decir "reproduce" seguido del título y el autor para empezar a escuchar! ¿Qué escuchamos?',
   SpeakCancelAndStopIntentHandlerGoodbye: 'Ádios!',
